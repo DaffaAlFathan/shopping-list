@@ -4,6 +4,11 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">Tutorial</span>
+            <a href="{% url 'main:logout' %}">
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-outline-success me-2" type="button">Logout</button>
+                </form>
+            </a>
         </div>
     </nav>
     <h1>Shopping List Page</h1>
@@ -54,11 +59,11 @@
         </button>
     </a>
 
-    <a href="{% url 'main:logout' %}">
+    <!-- <a href="{% url 'main:logout' %}">
         <button>
             Logout
         </button>
-    </a>
+    </a> -->
 
     <h5>Sesi terakhir login: {{ last_login }}</h5>
     
